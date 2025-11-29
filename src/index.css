@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* SAFASAHAR Natural Green Theme */
+    --background: 0 0% 100%;
+    --foreground: 156 42% 15%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 156 42% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 156 42% 15%;
+    
+    /* Primary: Fresh Green #34A853 */
+    --primary: 142 54% 43%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Light Green #8BC34A */
+    --secondary: 88 50% 53%;
+    --secondary-foreground: 156 42% 15%;
+    
+    /* Muted: Very Light Green #E8F5E8 */
+    --muted: 120 33% 94%;
+    --muted-foreground: 156 20% 40%;
+    
+    /* Accent: Earth Brown #8B6F47 */
+    --accent: 36 33% 41%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Off-white background #F1F8E9 */
+    --off-white: 84 47% 95%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 120 15% 88%;
+    --input: 120 15% 88%;
+    --ring: 142 54% 43%;
+    
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 156 42% 15%;
+    --foreground: 0 0% 98%;
+    --card: 156 35% 18%;
+    --card-foreground: 0 0% 98%;
+    --popover: 156 35% 18%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 142 54% 43%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 88 40% 40%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 156 25% 25%;
+    --muted-foreground: 120 15% 70%;
+    --accent: 36 33% 41%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 156 25% 25%;
+    --input: 156 25% 25%;
+    --ring: 142 54% 43%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
